@@ -1,0 +1,35 @@
+PS C:\Users\rusu0\OneDrive\デスクトップ\kadai_073> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\rusu0\OneDrive\デスクトップ\kadai_073
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/03/24     12:10                git_challenge       
+
+
+PS C:\Users\rusu0\OneDrive\デスクトップ\kadai_073> cd git_challenge
+PS C:\Users\rusu0\OneDrive\デスクトップ\kadai_073\git_challenge> git init
+Initialized empty Git repository in C:/Users/rusu0/OneDrive/デスクトッ プ/kadai_073/git_challenge/.git/
+PS C:\Users\rusu0\OneDrive\デスクトップ\kadai_073\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\Users\rusu0\OneDrive\デスクトップ\kadai_073\git_challenge> git add hello_world.txt
+PS C:\Users\rusu0\OneDrive\デスクトップ\kadai_073\git_challenge> git commit -m "ファイル追加およびファイル内にHello, world!という内容を追加"
+[main (root-commit) ab566d4] ファイル追加およびファイル内にHello, world!という内容を追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\rusu0\OneDrive\デスクトップ\kadai_073\git_challenge> git log
+commit ab566d4960570dc6ed3b0c2c68fe0195948b0c65 (HEAD -> main)
+Author: neon-zz <rusu036122@gmail.com>
+Date:   Mon Mar 24 12:15:54 2025 +0900
+
+    ファイル追加およびファイル内にHello, world!という内容を追加
+    PS C:\Users\rusu0\OneDrive\デスクトップ\kadai_073\git_challenge> echo "こんにちは、世界!" >>hello_world.txt
+PS C:\Users\rusu0\OneDrive\デスクトップ\kadai_073\git_challenge> git add hello_world.txt
+PS C:\Users\rusu0\OneDrive\デスクトップ\kadai_073\git_challenge> git commit -m "こんにちは、世界!という日本語挨拶を追加"
+[main fa64cfb] こんにちは、世界!という日本語挨拶を追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\rusu0\OneDrive\デスクトップ\kadai_073\git_challenge> git log --oneline
+fa64cfb (HEAD -> main) こんにちは、世界!という日本語挨拶を追加
+ab566d4 ファイル追加およびファイル内にHello, world!という内容を追加    
+PS C:\Users\rusu0\OneDrive\デスクトップ\kadai_073\git_challenge>
